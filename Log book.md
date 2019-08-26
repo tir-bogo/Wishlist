@@ -5,10 +5,12 @@ Tobias
 - Create git repo
 - Initialize project
 - Write logbook
+
 Peter
 - Create trello board
 - Design app
 - Write logbook
+
 Jonas
 - Create trello board
 - Design app
