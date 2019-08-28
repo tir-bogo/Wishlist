@@ -1,26 +1,13 @@
-import 'package:app/core/google_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:app/core/auth.dart';
 
-class GoogleSignInButton extends StatelessWidget{
-  final Widget afterSignInPage;
-  final GoogleAuth _googleAuth = GoogleAuth();
-
-  GoogleSignInButton({this.afterSignInPage});
+class GoogleSignInButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return OutlineButton(
       splashColor: Colors.grey,
-      onPressed: () {
-        _googleAuth.signIn().whenComplete(() {
-      Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (context) {
-            return afterSignInPage;
-          },
-        ),
-      );
-    });
+      onPressed: () { authService.googleSignIn();
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       highlightElevation: 0,
@@ -47,5 +34,4 @@ class GoogleSignInButton extends StatelessWidget{
       ),
     );
   }
-
 }
