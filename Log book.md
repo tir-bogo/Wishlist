@@ -23,3 +23,21 @@ While Peter and Jonas designed, Tobias got a task create repository on git
 - Design
 - Initialize project on github
 
+
+# Tirsdag - 26/8 -2019
+### Tobias
+- Google sign in button
+- Firebase setup
+- Migrate app to androidX
+
+### Jonas
+- Setup of development area
+- Documentation on figma
+- Background gradient
+
+### Peter
+- Setup of development area
+- Research embedded picture inside app
+
+## Tasks Done
+- Documentation
