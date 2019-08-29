@@ -59,3 +59,18 @@ While Peter and Jonas designed, Tobias got a task create repository on git
 - updated tasks on trello board
 - started working flow chart
 - updated backlog
+
+#torsdag - 29/08-2019
+
+### Tobias
+- ios firebase support
+- started working on the wishlist
+
+### Jonas
+- ios firebase support
+- navigation bar
+
+### Peter
+- fik lavet flow chart færdig
+- fik tilføjed nye ting til design
+- fik started på burndown chart
