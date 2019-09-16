@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:app/widgets/google_sign_in_button.dart';
 import 'package:app/widgets/white_text.dart';
-import 'package:app/widgets/icons/gift_icon.dart';
+import 'package:app/widgets/icons/icons.dart';
 import 'package:app/widgets/background.dart';
 
 class LoginPage extends StatelessWidget {
