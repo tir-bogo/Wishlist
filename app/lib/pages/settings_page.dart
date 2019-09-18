@@ -4,14 +4,12 @@ import 'package:app/widgets/background.dart';
 import 'package:app/widgets/white_text.dart';
 import 'package:app/core/auth.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatefulWidget {
+class SettingsPage extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _SettingsPageState createState() => _SettingsPageState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _SettingsPageState extends State<SettingsPage> {
   var dropdownvalue;
 
   @override
