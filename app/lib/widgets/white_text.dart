@@ -4,9 +4,9 @@ class WhiteText extends StatelessWidget {
   final String text;
   final double size;
   final bool bold;
-  final bool center;
+  final TextAlign textAlign;
 
-  WhiteText({this.text, this.size, this.bold, this.center});
+  WhiteText({this.text, this.size, this.bold, this.textAlign});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class WhiteText extends StatelessWidget {
         fontFamily: "Roboto",
         fontWeight: this.bold ? FontWeight.bold : FontWeight.normal,
       ),
-      textAlign: this.center ? TextAlign.center : TextAlign.left,
+      textAlign: this.textAlign,
     );
   }
 }

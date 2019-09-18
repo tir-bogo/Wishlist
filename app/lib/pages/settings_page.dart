@@ -6,10 +6,10 @@ import 'package:app/core/auth.dart';
 
 class SettingsPage extends StatefulWidget {
   @override
-  _SettingsPageState createState() => _SettingsPageState();
+  _SettingsAppState createState() => _SettingsAppState();
 }
 
-class _SettingsPageState extends State<SettingsPage> {
+class _SettingsAppState extends State<SettingsPage> {
   var dropdownvalue;
 
   @override
@@ -34,7 +34,7 @@ class _SettingsPageState extends State<SettingsPage> {
               size: 32,
               text: "Choose which list to add to",
               bold: true,
-              center: true,
+              textAlign: TextAlign.center,
             ),
           ),
           Container(
@@ -47,7 +47,7 @@ class _SettingsPageState extends State<SettingsPage> {
               ) {
                 return DropdownMenuItem<String>(
                   value: value,
-                  child: WhiteText(text: value,size: 24, center: false,bold: true,),
+                  child: WhiteText(text: value,size: 24,bold: true,),
                 );
               }).toList(),
               onChanged: (String newValue) {
@@ -65,11 +65,10 @@ class _SettingsPageState extends State<SettingsPage> {
           text: "Log out",
           size: 33,
           bold: true,
-          center: true,
+          textAlign: TextAlign.center,
         ),
         onPressed: (
-        ) {var auth = AuthService();
-        auth.signOut();},
+        ) {authService.signOut();},
         backgroundColor: Colors.white54,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
